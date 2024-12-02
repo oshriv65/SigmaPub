@@ -1,0 +1,37 @@
+body {
+  background-color: gray;
+  direction: rtl;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+h3 {
+  color: white;
+  font-size: 2rem;
+}
+p {
+  color: white;
+  font-size: 1.25rem;
+}
+main {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#logo {
+  height: 200px;
+  border-radius: 10%;
+}
+.btn {
+  height: 1.5rem;
+  width: 4rem;
+}
