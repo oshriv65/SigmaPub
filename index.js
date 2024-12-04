@@ -1,14 +1,30 @@
 function orderPlace(){
     var name = document.getElementById('name').value;
+    var nf = 1, idf = 1;
     if (!(/^[\sא-ת]+$/.test(name)))
-        alert("שם לא תקין")
+        nf = 0;
     var ID = document.getElementById('IDnum').value;
-    if (!(/^[0-9]+$/.test(ID)) || ID.length!=9)
-        alert("מספר תעודת זהות לא תקין")
+    if (!(/^[0-9]+$/.test(ID)) || ID.length != 9)
+        idf = 0;
     var numPeople = document.getElementById('numPeople').value;
     var date = document.getElementById('date').value;
     var time = document.getElementById('time').value;
-    alert ("ההזמנה הושלמה"+"\n"+name+"\n"+ID+"\n"+numPeople+"\n"+date+"\n"+time);
+    if (!nf && !idf)
+        alert("שם ותעודת זהות אינם תקינים")
+    else if (!nf)
+        alert("שם אינו תקין")
+    else if (!idf)
+        alert("תעודת זהות אינה תקינה")
+    else {
+        var message = "ההזמנה הושלמה" + "<br>" +
+            "שם מלא: " + name + "<br>" +
+            "תעודת זהות: " + ID + "<br>" +
+            "כמות אנשים: " + numPeople + "<br>" +
+            "תאריך: " + date + "<br>" +
+            "שעה: " + time;
+        alert("ההזמנה הושלמה" + "\n" + "שם מלא: " + name + "\n" + "תעודת זהות: " + ID + "\n" + "כמות אנשים: " + numPeople + "\n" + "תאריך: " + date + "\n" + "שעה: " + time);
+        document.getElementById('message').innerHTML = message;
+    }
 }
 
 function clearForm(){

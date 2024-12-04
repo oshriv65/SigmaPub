@@ -5,49 +5,53 @@
 	<script src="index.js"></script>
   </head>
   <body>
-    <main>
-        <img src="./logo.jpg" id="logo" alt="SigmaPubLogo">
-        <h1>SigmaPub</h1>
-        <h3>להזמנת מקום:</h3>
-        <form id="orderForm">
-            <table>
-                <tr>
-                    <td><p>שם מלא:</p></td>
-                    <td><input type="text" id="name" placeholder="ישראל ישראלי"></td>
-                    
-                </tr>
-                <tr>
-                    <td><p>ת״ז:</p></td>
-                    <td>
-                        <input type="text" id="IDnum" placeholder="123456789">
-                    </td>
-                </tr>
-                <tr>
-                    <td><p>כמה תהיו?</p>
-                    </td>
-                    <td>
-                        <select id="numPeople" name="numPeople">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><p>תאריך הזמנה:</p></td>
-                    <td><input type="date" id="date" min="2024-01-01" max="2024-12-31"></td>
-                </tr>
-                <tr>
-                    <td><p>שעה:</p></td>
-                    <td><input type="time" id="time" min="18:00" max="00:00"></td>
-                </tr>
-            </table></br>
-            <input type="button" class="btn" value="הזמנה" onclick="orderPlace()"></br></br>
-            <input type="button" class="btn" value="ניקוי טופס" onclick="clearForm()"></br></br>
-        </form>
-    </main>
+      <main>
+          <img src="./logo.jpg" id="logo" alt="SigmaPubLogo">
+          <h1>SigmaPub</h1>
+          <h3>להזמנת מקום:</h3>
+          <form id="orderForm">
+              <table>
+                  <tr>
+                      <td><p>שם מלא:</p></td>
+                      <td><input type="text" id="name" placeholder="ישראל ישראלי"></td>
+
+                  </tr>
+                  <tr>
+                      <td><p>ת״ז:</p></td>
+                      <td>
+                          <input type="text" id="IDnum" placeholder="123456789">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>כמה תהיו?</p>
+                      </td>
+                      <td>
+                          <select id="numPeople" name="numPeople">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                          </select>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><p>תאריך הזמנה:</p></td>
+                      <td><input type="date" id="date" min="2024-01-01" max="2024-12-31"></td>
+                  </tr>
+                  <tr>
+                      <td><p>שעה:</p></td>
+                      <td><input type="time" id="time" min="18:00" max="00:00"></td>
+                  </tr>
+                  <tr>
+                      <td><p><input type="button" class="btn" value="הזמנה" onclick="orderPlace()"></br></br></p></td>
+                      <td><p></p><input type="button" class="btn" value="ניקוי טופס" onclick="clearForm()"></br></br></td>
+                  </tr>
+              </table></br>
+          </form>
+          <p id="message"></p>
+      </main>
   </body>
 </html>
