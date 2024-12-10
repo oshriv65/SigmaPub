@@ -69,13 +69,13 @@ main {
   width: 150px;
   height: 100px;
 }
+
+.tosafid{
+  text-align:right;
+  color: white;
+}
 #Htosafid{
 	width:150;
-}
-
-#tosafid{
-	text-align:right;
-  color: white;
 }
 
 #priceCalcBtn{

@@ -2,6 +2,7 @@
   <head>
     <title>SigmaPub</title>
 	<link rel="stylesheet" href="index.css">
+	<link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
 	<script src="index.js"></script>
   </head>
   <body>
@@ -17,9 +18,9 @@
                         
                     </tr>
                     <tr>
-                        <td><p>ת״ז:</p></td>
+                        <td><p>טלפון נייד:</p></td>
                         <td>
-                            <input type="text" id="IDnum" placeholder="123456789">
+                            <input type="text" id="phoneNum" placeholder="0512345678">
                         </td>
                     </tr>
                     <tr>
@@ -43,7 +44,7 @@
                     </tr>
                     <tr>
                         <td><p>שעה:</p></td>
-                        <td><input type="time" id="time" min="18:00" max="00:00"></td>
+                        <td><input type="time" id="time"></td>
                     </tr>
                     <tr>
                         <td><input type="button" class="btn" value="הזמנה" onclick="orderPlace()"></td>
@@ -69,7 +70,7 @@
 				<td><input type="checkbox" id="food1" name="order" value="45"><h4>פיצה מרגריטה</h4></td>
 				<td class="description">.פיצה מרגריטה קלאסית עם רוטב עגבניות טרי, גבינת מוצרלה עשירה, ותרסיס של שמן זית איכותי. מוגשת עם עשבי תיבול טריים להשלמת החוויה</td>
 				<td class="price">45₪</td>
-				<td id="tosafid">
+				<td class="tosafid">
 					<input type="checkbox" id="T1" name="toppings" value="5">פטריות 5₪</br>
 					<input type="checkbox" id="T2" name="toppings" value="5">בצל 5₪</br>
 					<input type="checkbox" id="T3" name="toppings" value="10">אננס 10₪</br>
@@ -83,7 +84,7 @@
 				<td><input type="checkbox" id="food2" name="order" value="50"><h4>פיצה מלך הגבינות</h3></td>
 				<td class="description">.פיצה 4 גבינות עשירה עם שילוב מושלם של מוצרלה, גבינת פרמזן, גבינת רוקפור וגבינת מוצרלה בופאלה, על בסיס רוטב עגבניות ותרסיס של שמן זית. שילוב קרמי ומלטף שמענג כל חיך</td>
 				<td class="price">50₪</td>
-				<td id="tosafid">
+				<td class="tosafid">
 					<input type="checkbox" id="T21" name="toppings2" value="7">צ'דר 7₪ </br>
 					<input type="checkbox" id="T22" name="toppings2" value="7">בולגרית 7₪</br>
 					<input type="checkbox" id="T23" name="toppings2" value="10">אולד אמסטרדם 10₪</br>
@@ -97,7 +98,7 @@
 				<td><input type="checkbox" id="food3" name="order" value="40"><h4>וופל בלגי</h4></td>
 				<td class="description">.וופל חמים ופריך, ניתן להוסיף תוספות ולהשלים את חוויית המתיקות</td>
 				<td class="price">40₪</td>
-				<td id="tosafid">
+				<td class="tosafid">
 					<input type="checkbox" id="T31" name="toppings3" value="5">אוראו 5₪</br>
 					<input type="checkbox" id="T32" name="toppings3" value="7">גלידה וניל 7₪</br>
 					<input type="checkbox" id="T33" name="toppings3" value="4">קליק 4₪</br>
