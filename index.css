@@ -1,84 +1,99 @@
+/* Global styles */
+
 body {
+  /* Set background color */
   background-color: gray;
+  /* Set text direction */
   direction: rtl;
+  /* Create a linear gradient for background */
   background: linear-gradient(to right, black 40%, #64748b);
 }
+
+/* Headings styles */
+
 h1 {
+  /* Center headings */
   text-align:center;
+  /* Set color and font size */
   color: white;
   font-size: 5rem;
+  /* Remove bottom margin */
   margin-bottom: 0;
 }
-h2{
-  color: white;
-  font-size: 3rem;
-}
-h3 {
-  color: white;
-  font-size: 2rem;
-}
-h4{
+
+h2, h3, h4 {
+  /* Set color for smaller headings */
   color: white;
 }
 p {
+  /* Set color for paragraphs */
   color: white;
-
 }
+
+/* Main styles */
+
 main {
+  /* Add top margin and center content vertically */
   margin-top: 4rem;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
+/* Logo styles */
+
 #logo {
+  /* Set logo height and border radius */
   height: 200px;
   border-radius: 10%;
 }
+
+/* Button styles */
+
 .btn {
+  /* Add padding, font size, and border radius to buttons */
   padding: 10px 10px;
   font-size: 1.25rem;
   border-radius: 8px;
 }
 
-/*
-  Menu Section
-*/
-.menu{
+/* Menu styles */
+.menu {
+  /* Create a white border around the menu */
   border:2px solid white;
   margin: 0 auto;
 	text-align:center;
 	width:60%;
 }
 
-.menu th {
+.menu th, .menu td {
+  /* Set border for table cells in the menu */
   border: 2px solid white;
 	width:200;	
 }
-.menu td{
-  border: 2px solid white;
-	width:200;	
-}
-.price{
-  color: white;
-  font-size: 1.5rem;
-}
-.description{
+
+.price, .description {
+  /* Set color and font size for price and description */
   color: white;
 }
-.img{
+.img {
+  /* Set image dimensions */
   width: 150px;
   height: 100px;
 }
 
-.tosafid{
+.tosafid {
+  /* Right-align text */
   text-align:right;
   color: white;
 }
-#Htosafid{
+#Htosafid {
+  /* Set width for a specific element */
 	width:150;
 }
 
-#priceCalcBtn{
+#priceCalcBtn {
+  /* Style a button specifically */
 	font-size: 15px;
 	padding: 20px 35px;
 	border-radius: 8px;

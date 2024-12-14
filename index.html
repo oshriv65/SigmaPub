@@ -1,32 +1,44 @@
+<!-- HTML document -->
 <html lang="en">
+  <!-- Head section containing metadata and links to external resources -->
   <head>
     <title>SigmaPub</title>
+	<!-- Linking external CSS file for styling -->
 	<link rel="stylesheet" href="index.css">
+	<!-- Linking external icon image -->
 	<link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+	<!-- Linking external JavaScript file for dynamic functionality -->
 	<script src="index.js"></script>
   </head>
+  
+  <!-- Body section containing the main content of the HTML document -->
   <body>
+      <!-- Main container element for the website's content -->
       <main>
+            <!-- Image element for displaying the logo -->
             <img src="./assets/logo.jpg" id="logo" alt="SigmaPubLogo">
+            <!-- Header element containing the title and subtitle -->
             <h1>SigmaPub</h1>
             <h2>להזמנת מקום:</h2>
+            
+            <!-- Form element for submitting orders -->
             <form id="orderForm">
+                <!-- Table element for displaying order information -->
                 <table>
+                    <!-- Table row containing input fields and labels -->
                     <tr>
                         <td><p>שם מלא:</p></td>
                         <td><input type="text" id="name" placeholder="ישראל ישראלי"></td>
                         
                     </tr>
+                    <!-- Table row containing input fields and labels -->
                     <tr>
                         <td><p>טלפון נייד:</p></td>
-                        <td>
-                            <input type="text" id="phoneNum" placeholder="0512345678">
-                        </td>
+                        <td><input type="text" id="phoneNum" placeholder="0512345678"></td>
                     </tr>
+                    <!-- Table row containing select input field and labels -->
                     <tr>
-                        <td>
-                            <p>כמה תהיו?</p>
-                        </td>
+                        <td><p>כמה תהיו?</p></td>
                         <td>
                             <select id="numPeople" name="numPeople">
                                 <option value="1">1</option>
@@ -38,27 +50,32 @@
                             </select>
                         </td>
                     </tr>
+                    <!-- Table row containing input fields and labels -->
                     <tr>
                         <td><p>תאריך הזמנה:</p></td>
                         <td><input type="date" id="date" min="2024-01-01" max="2024-12-31"></td>
                     </tr>
+                    <!-- Table row containing input fields and labels -->
                     <tr>
                         <td><p>שעה:</p></td>
                         <td><input type="time" id="time"></td>
                     </tr>
+                    <!-- Table row containing button inputs for submitting order or clearing form -->
                     <tr>
                         <td><input type="button" class="btn" value="הזמנה" onclick="orderPlace()"></td>
                         <td><input type="button" class="btn" value="ניקוי טופס" onclick="clearForm()"></td>
                     </tr>
-                    <tr>
-                    </tr>
                 </table></br>
             </form>
             <p id="message"></p>
-
+            <!-- Header element containing the title and subtitle -->
         <h1>תפריט אוכל</h1>
+            
+            <!-- Form element for submitting orders -->
 		<form>
+                <!-- Table element for displaying menu information -->
 		<table class="menu">
+                    <!-- Table row containing header elements and labels -->
 			<tr>
 				<th><h3>שם</h3></th>
 				<th><h3>תיאור</h3></th>
@@ -66,6 +83,8 @@
 				<th id="Htosafid"><h3>תוספות</h3></th>
 				<th><h3>תמונה</h3></th>
 			</tr>
+                    
+                    <!-- Table row containing menu item information -->
 			<tr>
 				<td><input type="checkbox" id="food1" name="order" value="45"><h4>פיצה מרגריטה</h4></td>
 				<td class="description">.פיצה מרגריטה קלאסית עם רוטב עגבניות טרי, גבינת מוצרלה עשירה, ותרסיס של שמן זית איכותי. מוגשת עם עשבי תיבול טריים להשלמת החוויה</td>
@@ -80,6 +99,8 @@
 					<img src="./assets/Pizza_margherita.jpg" class="img" alt="Pizza margherita">
 				</td>
 			</tr>
+                    
+                    <!-- Table row containing menu item information -->
 			<tr>
 				<td><input type="checkbox" id="food2" name="order" value="50"><h4>פיצה מלך הגבינות</h3></td>
 				<td class="description">.פיצה 4 גבינות עשירה עם שילוב מושלם של מוצרלה, גבינת פרמזן, גבינת רוקפור וגבינת מוצרלה בופאלה, על בסיס רוטב עגבניות ותרסיס של שמן זית. שילוב קרמי ומלטף שמענג כל חיך</td>
@@ -94,9 +115,11 @@
 					<img src="./assets/Pizza_4Cheese.jpg" class="img" alt="pizza">
 				</td>
 			</tr>
+                    
+                    <!-- Table row containing menu item information -->
 			<tr>
 				<td><input type="checkbox" id="food3" name="order" value="40"><h4>וופל בלגי</h4></td>
-				<td class="description">.וופל חמים ופריך, ניתן להוסיף תוספות ולהשלים את חוויית המתיקות</td>
+                        <td class="description">.וופל חמים ופריך, ניתן להוסיף תוספות ולהשלמת את חוויית המתיקות</td>
 				<td class="price">40₪</td>
 				<td class="tosafid">
 					<input type="checkbox" id="T31" name="toppings3" value="5">אוראו 5₪</br>
@@ -109,65 +132,88 @@
 
 				</td>
 			</tr>
-		</table>
-		<h1>תפריט שתייה</h1>
-		<table class="menu">
-			<tr>
-				<th><h3>שם</h3></th>
-				<th><h3>תיאור</h3></th>
-				<th><h3>מחיר</h3></th>
-				<th id="Htosafid"><h3>כמות</h3></th>
-				<th><h3>תמונה</h3></th>
-			</tr>
-			<tr>
-				<td><h4>שתייה קלה</h4></td>
-				<td class="description">תוכלו לבחור שתייה קלה מהמגוון שלנו</td>
-				<td class="price">8₪</td>
-				<td>
-					<select id="Damount1" name="drinks1">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-				</td>
-				<td>
-					<img src="./assets/SoftDrink.jpg" class="img" alt="Soft drinks">
-				</td>
-			</tr>
-			<tr>
-				<td><h4>HTML קוקטייל</h4></td>
-				<td class="description">קוקטייל ביתי ומשובח, המורכב משילוב מושלם של אלכוהול איכותי, פירות טריים, ותמציות בעבודת יד. כל רכיב נבחר בקפידה כדי להעניק טעמים מעודנים ומרעננים</td>
-				<td class="price">24₪</td>
-				<td>
-					<select id="Damount2" name="drinks2">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-				</td>
-				<td>
-					<img src="./assets/Cocktail.jpg" class="img" alt="Cocktail">
-
-				</td>
-			</tr>
-			<tr>
-				<td><h4>בירת הבית</h4></td>
-				<td class="description">בירה ביתית עשויה בתשומת לב, עם מתכון ייחודי , המעניק טעמים טבעיים ומרעננים. כל בקבוק מלא בטעמים אותנטיים ומרקם חלק, מושלם להשלמת חוויית השתייה.</td>
-				<td class="price">20₪</td>
-				<td>
-					<select id="Damount3" name="drinks">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-				</td>
-				<td>
-					<img src="./assets/Beer.jpg" class="img" alt="Beer">
-				</td>
-			</tr>
+                    
 		</table>
     </form>
+            
+            <h1>תפריט שתייה</h1>
+            
+            <!-- Form element for submitting orders -->
+            <form>
+                <!-- Table element for displaying menu information -->
+                <table class="menu">
+                    <!-- Table row containing header elements and labels -->
+                    <tr>
+                        <th><h3>שם</h3></th>
+                        <th><h3>תיאור</h3></th>
+                        <th><h3>מחיר</h3></th>
+                        <th id="Htosafid"><h3>כמות</h3></th>
+                        <th><h3>תמונה</h3></th>
+                    </tr>
+                    
+                    <!-- Table row containing menu item information -->
+                    <tr>
+                        <td><h4>שתייה קלה</h4></td>
+                        <td class="description">תוכלו לבחור שתייה קלה מהמגוון שלנו</td>
+                        <td class="price">8₪</td>
+                        <td>
+                            <select id="Damount1" name="drinks1">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                        <td>
+                            <img src="./assets/SoftDrink.jpg" class="img" alt="Soft drinks">
+                        </td>
+                    </tr>
+                    
+                    <!-- Table row containing menu item information -->
+                    <tr>
+                        <td><h4>HTML קוקטייל</h4></td>
+                        <td class="description">קוקטייל ביתי ומשובח, המורכב משילוב מושלם של אלכוהול איכותי, פירות טריים, ותמציות בעבודת יד. כל רכיב נבחר בקפידה כדי להעניק טעמים מעודנים ומרעננים</td>
+                        <td class="price">24₪</td>
+                        <td>
+                            <select id="Damount2" name="drinks2">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                        <td>
+                            <img src="./assets/Cocktail.jpg" class="img" alt="Cocktail">
+
+                        </td>
+                    </tr>
+                    
+                    <!-- Table row containing menu item information -->
+                    <tr>
+                        <td><h4>בירת הבית</h4></td>
+                        <td class="description">בירה ביתית עשויה בתשומת לב, עם מתכון ייחודי , המעניק טעמים טבעיים ומרעננים. כל בקבוק מלא בטעמים אותנטיים ומרקם חלק, מושלם להשלמת חוויית השתייה.</td>
+                        <td class="price">20₪</td>
+                        <td>
+                            <select id="Damount3" name="drinks">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                        <td>
+                            <img src="./assets/Beer.jpg" class="img" alt="Beer">
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+            </form>
+            
+            <!-- Button element for calculating total price -->
     <button type="button" onclick="calculateTotal()" id="priceCalcBtn">חשב מחיר</button>
     </main>
+        
   </body>
+    
 </html>
