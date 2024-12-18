@@ -39,6 +39,10 @@ main {
   align-items: center;
   flex-direction: column;
 }
+table{
+  margin: 0 auto;
+  width:60%;
+}
 
 /* Logo styles */
 
@@ -61,9 +65,8 @@ main {
 .menu {
   /* Create a white border around the menu */
   border:2px solid white;
-  margin: 0 auto;
 	text-align:center;
-	width:60%;
+	
 }
 
 .menu th, .menu td {
