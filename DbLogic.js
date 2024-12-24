@@ -9,7 +9,12 @@ function clearAllDataFromLocalMemory() {
 }
 
 function getAllOrdersFromLocalMemory(key) {
-  return localStorage.getItem(key) || ""; // If no data, return empty string
+  let data = "";
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i); // Get the key (which could be anything)
+    data += localStorage.getItem(key); // Get the corresponding value
+  }
+  return data || "אין הזמנות.."; // If no data, return empty string
 }
 function checkIfOrderExistsInLocalMemory(key) {
   if (localStorage.getItem(key) !== null) {

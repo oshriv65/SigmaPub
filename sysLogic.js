@@ -3,6 +3,6 @@ function clearAllData() {
   document.getElementById("message").innerHTML = "";
 }
 function getAllOrders() {
-  let data = getAllOrdersFromLocalMemory("orderDetails");
+  let data = getAllOrdersFromLocalMemory();
   document.getElementById("message").innerHTML = data;
 }

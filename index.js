@@ -41,9 +41,7 @@ function orderPlace() {
       date +
       "<br>שעה: " +
       time;
-    let existingOrders = getAllOrdersFromLocalMemory("orderDetails");
-    let UpdatedOrders = existingOrders + "</br></br>" + message;
-    saveOrderToLocalMemory("orderDetails", UpdatedOrders);
+    saveOrderToLocalMemory(phoneNum, message);
     alert(
       "ההזמנה הושלמה" +
         "\n" +
