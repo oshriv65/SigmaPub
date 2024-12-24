@@ -11,3 +11,10 @@ function clearAllDataFromLocalMemory() {
 function getAllOrdersFromLocalMemory(key) {
   return localStorage.getItem(key) || ""; // If no data, return empty string
 }
+function checkIfOrderExistsInLocalMemory(key) {
+  if (localStorage.getItem(key) !== null) {
+    return true;
+  } else {
+    return false;
+  }
+}

@@ -1,0 +1,125 @@
+<html lang="en">
+    <head>
+        <title>תפריט</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="icon" href="./assets/sigmaIcon.svg" type="image/svg+xml" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <main>
+            <button type="button" class="btn" onclick="window.location.href='./index.html'">חזרה</button>
+            <h1>תפריט אוכל</h1>
+		<form>
+		<table class="menu">
+			<tr>
+				<th><h3>שם</h3></th>
+				<th><h3>תיאור</h3></th>
+				<th><h3>מחיר</h3></th>
+				<th id="Htosafid"><h3>תוספות</h3></th>
+				<th><h3>תמונה</h3></th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" id="food1" name="order" value="45"><h4>פיצה מרגריטה</h4></td>
+				<td class="description">.פיצה מרגריטה קלאסית עם רוטב עגבניות טרי, גבינת מוצרלה עשירה, ותרסיס של שמן זית איכותי. מוגשת עם עשבי תיבול טריים להשלמת החוויה</td>
+				<td class="price">45₪</td>
+				<td class="tosafid">
+					<input type="checkbox" id="T1" name="toppings" value="5">פטריות 5₪</br>
+					<input type="checkbox" id="T2" name="toppings" value="5">בצל 5₪</br>
+					<input type="checkbox" id="T3" name="toppings" value="10">אננס 10₪</br>
+					<input type="checkbox" id="T4" name="toppings" value="5">תירס 5₪
+				</td>
+				<td>
+					<img src="./assets/Pizza_margherita.jpg" class="img" alt="Pizza margherita">
+				</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" id="food2" name="order" value="50"><h4>פיצה מלך הגבינות</h3></td>
+				<td class="description">.פיצה 4 גבינות עשירה עם שילוב מושלם של מוצרלה, גבינת פרמזן, גבינת רוקפור וגבינת מוצרלה בופאלה, על בסיס רוטב עגבניות ותרסיס של שמן זית. שילוב קרמי ומלטף שמענג כל חיך</td>
+				<td class="price">50₪</td>
+				<td class="tosafid">
+					<input type="checkbox" id="T21" name="toppings2" value="7">צ'דר 7₪ </br>
+					<input type="checkbox" id="T22" name="toppings2" value="7">בולגרית 7₪</br>
+					<input type="checkbox" id="T23" name="toppings2" value="10">אולד אמסטרדם 10₪</br>
+					<input type="checkbox" id="T24" name="toppings2" value="7">גאודה 7₪
+				</td>
+				<td>
+					<img src="./assets/Pizza_4Cheese.jpg" class="img" alt="pizza">
+				</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" id="food3" name="order" value="40"><h4>וופל בלגי</h4></td>
+				<td class="description">.וופל חמים ופריך, ניתן להוסיף תוספות ולהשלים את חוויית המתיקות</td>
+				<td class="price">40₪</td>
+				<td class="tosafid">
+					<input type="checkbox" id="T31" name="toppings3" value="5">אוראו 5₪</br>
+					<input type="checkbox" id="T32" name="toppings3" value="7">גלידה וניל 7₪</br>
+					<input type="checkbox" id="T33" name="toppings3" value="4">קליק 4₪</br>
+					<input type="checkbox" id="T34" name="toppings3" value="5">קצפת 5₪
+				</td>
+				<td>
+					<img src="./assets/Waffle.jpg" class="img" alt="Waffle">
+
+				</td>
+			</tr>
+		</table>
+		<h1>תפריט שתייה</h1>
+		<table class="menu">
+			<tr>
+				<th><h3>שם</h3></th>
+				<th><h3>תיאור</h3></th>
+				<th><h3>מחיר</h3></th>
+				<th id="Htosafid"><h3>כמות</h3></th>
+				<th><h3>תמונה</h3></th>
+			</tr>
+			<tr>
+				<td><h4>שתייה קלה</h4></td>
+				<td class="description">תוכלו לבחור שתייה קלה מהמגוון שלנו</td>
+				<td class="price">8₪</td>
+				<td>
+					<select id="Damount1" name="drinks1">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+				</td>
+				<td>
+					<img src="./assets/SoftDrink.jpg" class="img" alt="Soft drinks">
+				</td>
+			</tr>
+			<tr>
+				<td><h4>HTML קוקטייל</h4></td>
+				<td class="description">קוקטייל ביתי ומשובח, המורכב משילוב מושלם של אלכוהול איכותי, פירות טריים, ותמציות בעבודת יד. כל רכיב נבחר בקפידה כדי להעניק טעמים מעודנים ומרעננים</td>
+				<td class="price">24₪</td>
+				<td>
+					<select id="Damount2" name="drinks2">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+				</td>
+				<td>
+					<img src="./assets/Cocktail.jpg" class="img" alt="Cocktail">
+
+				</td>
+			</tr>
+			<tr>
+				<td><h4>בירת הבית</h4></td>
+				<td class="description">בירה ביתית עשויה בתשומת לב, עם מתכון ייחודי , המעניק טעמים טבעיים ומרעננים. כל בקבוק מלא בטעמים אותנטיים ומרקם חלק, מושלם להשלמת חוויית השתייה.</td>
+				<td class="price">20₪</td>
+				<td>
+					<select id="Damount3" name="drinks">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+				</td>
+				<td>
+					<img src="./assets/Beer.jpg" class="img" alt="Beer">
+				</td>
+			</tr>
+		</table>
+                </form>
+                <button type="button" onclick="calculateTotal()" id="priceCalcBtn">חשב מחיר</button>
+        </main>
+    </body>
+</html>
