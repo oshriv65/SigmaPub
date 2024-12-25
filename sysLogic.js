@@ -13,6 +13,9 @@ function getAllOrders() {
 // Searches for an order by phone number and displays the result
 function searchByPhoneNum() {
   let phoneNum = document.getElementById("phoneNum").value;
-  document.getElementById("message").innerHTML =
-    getOrderFromLocalMemory(phoneNum);
+  if (!/^[0-9]+$/.test(phoneNum) || phoneNum.length != 10)
+    alert("טלפון נייד אינו תקין");
+  else
+    document.getElementById("message").innerHTML =
+      getOrderFromLocalMemory(phoneNum) || "ההזמנה לא קיימת!";
 }
