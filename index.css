@@ -1,90 +1,95 @@
 body {
-    background-color: gray;
-    direction: rtl;
-    background: linear-gradient(to right, black 40%, #64748b);
+  direction: rtl;
+  background: linear-gradient(to right, black 40%, #64748b);
 }
 h1 {
-    text-align: center;
-    color: white;
-    font-size: 5rem;
-    margin-bottom: 0;
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 0;
 }
 h2 {
-    color: white;
-    font-size: 3rem;
+  color: white;
+  font-size: 3rem;
 }
 h3 {
-    color: white;
-    font-size: 2rem;
+  color: white;
+  font-size: 2rem;
 }
 h4 {
-    color: white;
+  color: white;
 }
 p {
-    color: white;
+  color: white;
 }
 main {
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 #logo {
-    height: 200px;
-    border-radius: 10%;
+  height: 200px;
+  border-radius: 10%;
 }
 .btn {
-    padding: 10px 10px;
-    font-size: 1.25rem;
-    border-radius: 8px;
+  padding: 10px 10px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 /*
   Menu Section
 */
 .menu {
-    border: 2px solid white;
-    margin: 0 auto;
-    text-align: center;
-    width: 60%;
+  border: 2px solid white;
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
 }
 
 .menu th {
-    border: 2px solid white;
-    width: 200;
+  border: 2px solid white;
+  width: 200;
 }
 .menu td {
-    border: 2px solid white;
-    width: 200;
+  border: 2px solid white;
+  width: 200;
 }
 .price {
-    color: white;
-    font-size: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
 }
 .description {
-    color: white;
+  color: white;
 }
 .img {
-    width: 150px;
-    height: 100px;
+  width: 150px;
+  height: 100px;
 }
 
 .tosafid {
-    text-align: right;
-    color: white;
+  text-align: right;
+  color: white;
 }
 .btnSection {
-    display: flex;
+  display: flex;
+  flex-direction: column;
 }
 #Htosafid {
-    width: 150;
+  width: 150;
 }
 
 #priceCalcBtn {
-    font-size: 15px;
-    padding: 20px 35px;
-    border-radius: 8px;
+  font-size: 15px;
+  padding: 20px 35px;
+  border-radius: 8px;
 }
 .saas {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+input {
+  border-radius: 5px;
 }

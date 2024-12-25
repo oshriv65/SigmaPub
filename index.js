@@ -22,25 +22,30 @@ function orderPlace() {
     phoneFlag = 0; // If the input is not valid, set the flag to 0 (false).
 
   // Check if either the 'name' or 'phoneNum' field is invalid. If so, display an alert message accordingly.
-  if (!nameFlag && !phoneFlag)
-    alert("שם וטלפון נייד אינם תקינים"); // Display a message indicating that both fields are invalid.
-  else if (!nameFlag)
-    alert("שם אינו תקין"); // Display a message indicating that the 'name' field is invalid.
-  else if (!phoneFlag)
-    alert("טלפון נייד אינו תקין"); // Display a message indicating that the 'phoneNum' field is invalid.
+  if (!nameFlag && !phoneFlag) alert("שם וטלפון נייד אינם תקינים");
+  // Display a message indicating that both fields are invalid.
+  else if (!nameFlag) alert("שם אינו תקין");
+  // Display a message indicating that the 'name' field is invalid.
+  else if (!phoneFlag) alert("טלפון נייד אינו תקין");
+  // Display a message indicating that the 'phoneNum' field is invalid.
   // If both fields are valid, construct a message with the order details and display it using an alert box.
   else {
     let message =
       "שם מלא: " +
       name +
-      "<br>טלפון נייד: " +
+      "<br>" +
+      "טלפון נייד: " +
       phoneNum +
-      "<br>כמות אנשים: " +
+      "<br>" +
+      "כמות אנשים: " +
       numPeople +
-      "<br>תאריך: " +
+      "<br>" +
+      "תאריך: " +
       date +
-      "<br>שעה: " +
-      time;
+      "<br>" +
+      "שעה: " +
+      time +
+      "<br><br>";
     saveOrderToLocalMemory(phoneNum, message);
     alert(
       "ההזמנה הושלמה" +
@@ -58,7 +63,7 @@ function orderPlace() {
         date +
         "\n" +
         "שעה: " +
-        time,
+        time
     );
   }
 }
