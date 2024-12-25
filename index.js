@@ -72,8 +72,6 @@ function orderPlace() {
 function clearForm() {
   // Reset all input fields to their initial values.
   document.getElementById("orderForm").reset();
-  // Clear any previously displayed order details in the HTML element with ID 'message'.
-  document.getElementById("message").innerHTML = "";
 }
 // Define a function named 'calculateTotal' which will be called when the user clicks on the 'Calculate Total' button.
 function calculateTotal() {
