@@ -19,3 +19,14 @@ function searchByPhoneNum() {
     document.getElementById("message").innerHTML =
       getOrderFromLocalMemory(phoneNum) || "ההזמנה לא קיימת!";
 }
+
+function login() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  if (checkIfUserExists(username, password)) {
+    alert("התחברת בהצלחה!");
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("managerSystem").style.display = "block";
+    document.getElementById("loginForm").reset();
+  } else alert("שם משתמש או סיסמה שגויים");
+}
