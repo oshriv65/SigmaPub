@@ -1,7 +1,9 @@
 //const users = { admin: "admin" };
 function loadDB() {
-  localStorage.setItem("users", JSON.stringify({ admin: "admin" }));
-  localStorage.setItem("orders", JSON.stringify({}));
+  if (!localStorage.length) {
+    localStorage.setItem("users", JSON.stringify({ admin: "admin" }));
+    localStorage.setItem("orders", JSON.stringify({}));
+  }
 }
 function checkIfUserExists(username, password) {
   let users = JSON.parse(localStorage.getItem("users"));
