@@ -22,12 +22,18 @@ function orderPlace() {
     phoneFlag = 0; // If the input is not valid, set the flag to 0 (false).
 
   // Check if either the 'name' or 'phoneNum' field is invalid. If so, display an alert message accordingly.
-  if (!nameFlag && !phoneFlag) alert("שם וטלפון נייד אינם תקינים");
-  // Display a message indicating that both fields are invalid.
-  else if (!nameFlag) alert("שם אינו תקין");
-  // Display a message indicating that the 'name' field is invalid.
-  else if (!phoneFlag) alert("טלפון נייד אינו תקין");
-  // Display a message indicating that the 'phoneNum' field is invalid.
+  if (!nameFlag && !phoneFlag)
+    alert(
+      "שם וטלפון נייד אינם תקינים"
+    ); // Display a message indicating that both fields are invalid.
+  else if (!nameFlag)
+    alert(
+      "שם אינו תקין"
+    ); // Display a message indicating that the 'name' field is invalid.
+  else if (!phoneFlag)
+    alert(
+      "טלפון נייד אינו תקין"
+    ); // Display a message indicating that the 'phoneNum' field is invalid.
   // If both fields are valid, construct a message with the order details and display it using an alert box.
   else {
     let message =
@@ -46,7 +52,7 @@ function orderPlace() {
       "שעה: " +
       time +
       "<br><br>";
-    saveOrderToLocalMemory(phoneNum, message);
+    saveOrderToLocalMemory(phoneNum, message); // Save the order details to local memory.
     alert(
       "ההזמנה הושלמה" +
         "\n" +
@@ -64,7 +70,7 @@ function orderPlace() {
         "\n" +
         "שעה: " +
         time
-    );
+    ); // Display the order completion message.
   }
 }
 
@@ -73,6 +79,7 @@ function clearForm() {
   // Reset all input fields to their initial values.
   document.getElementById("orderForm").reset();
 }
+
 // Define a function named 'calculateTotal' which will be called when the user clicks on the 'Calculate Total' button.
 function calculateTotal() {
   let total = 0;
