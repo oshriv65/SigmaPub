@@ -1,0 +1,13 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0rem;
+}
+iframe {
+  margin: 2rem 0rem;
+}

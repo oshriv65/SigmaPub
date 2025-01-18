@@ -1,0 +1,71 @@
+body {
+  direction: rtl;
+  background: linear-gradient(to right, black 40%, #64748b);
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+h2 {
+  color: white;
+  font-size: 3rem;
+}
+h3 {
+  color: white;
+  font-size: 2rem;
+}
+h4 {
+  color: white;
+}
+p {
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+}
+#navbar-logo {
+  letter-spacing: 2px;
+}
+#navbar-logo span {
+  color: #64748b;
+}
+
+.nav-buttons {
+  padding: 0rem 3rem;
+}
+.nav-buttons a {
+  font-size: 2rem;
+  padding-left: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+input {
+  border-radius: 5px;
+}
+main {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 10px 10px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.saas {
+  padding-bottom: 50px;
+}
+#logo {
+  height: 200px;
+  border-radius: 10%;
+}

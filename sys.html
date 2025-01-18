@@ -1,51 +1,52 @@
 <html lang="en">
-    <head>
-        <title>מערכת ניהול הזמנות</title>
-        <link rel="stylesheet" href="index.css" />
-        <link rel="icon" href="./assets/sysIcon.svg" type="image/svg+xml" />
-        <script src="DbLogic.js"></script>
-        <script src="sysLogic.js"></script>
-    </head>
-    <body>
-        <main>
-            <h1>מערכת ניהול הזמנות</h1>
-            <form id="loginForm">
-                <table>
-                    <tr>
-                        <td><p>שם משתמש:</p></td>
-                        <td><input type="text" id="username" /></td>
-                    </tr>
-                    <tr>
-                        <td><p>סיסמה:</p></td>
-                        <td><input type="password" id="password" /></td>
-                    </tr>
-                </table>
-                <input type="button" value="התחבר" onclick="login()" />
-            </form>
+  <head>
+    <title>מערכת ניהול הזמנות</title>
+    <link rel="stylesheet" href="./public/styles/index.css" />
+    <link rel="stylesheet" href="./public/styles/sys.css" />
+    <link rel="icon" href="./assets/sysIcon.svg" type="image/svg+xml" />
+    <script src="DbLogic.js"></script>
+    <script src="sysLogic.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-buttons">
+        <a href="./sys.html">מערכת ניהול</a>
+        <a href="./menu.html">תפריט</a>
+        <a href="./orderPlace.html">הזמנת מקום</a>
+      </div>
+      <h2 id="navbar-logo">Sigma<span>Pub</span></h2>
+    </nav>
+    <main>
+      <h1>מערכת ניהול הזמנות</h1>
+      <form id="loginForm">
+        <table>
+          <tr>
+            <td><p>שם משתמש:</p></td>
+            <td><input type="text" id="username" /></td>
+          </tr>
+          <tr>
+            <td><p>סיסמה:</p></td>
+            <td><input type="password" id="password" /></td>
+          </tr>
+        </table>
+        <input type="button" value="התחבר" onclick="login()" />
+      </form>
 
-            <div id="managerSystem">
-                <p id="message"></p>
-                <section class="btnSection">
-                    <form>
-                        <input
-                            type="text"
-                            id="phoneNum"
-                            placeholder="הזן מספר טלפון לחיפוש"
-                        />
-                        <input
-                            type="button"
-                            value="חיפוש"
-                            onclick="searchByPhoneNum()"
-                        />
-                    </form>
-                    <button class="btn" onclick="getAllOrders()">
-                        לכל ההזמנות
-                    </button>
-                    <button class="btn" onclick="clearAllData()">
-                        הסר הכל
-                    </button>
-                </section>
-            </div>
-        </main>
-    </body>
+      <div id="managerSystem">
+        <p id="message"></p>
+        <section class="btnSection">
+          <form>
+            <input
+              type="text"
+              id="phoneNum"
+              placeholder="הזן מספר טלפון לחיפוש"
+            />
+            <input type="button" value="חיפוש" onclick="searchByPhoneNum()" />
+          </form>
+          <button class="btn" onclick="getAllOrders()">לכל ההזמנות</button>
+          <button class="btn" onclick="clearAllData()">הסר הכל</button>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

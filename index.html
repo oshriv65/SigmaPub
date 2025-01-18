@@ -1,71 +1,51 @@
 <html lang="en">
   <head>
     <title>SigmaPub</title>
-	<link rel="stylesheet" href="index.css">
-	<link rel="icon" href="./assets/sigmaIcon.svg" type="image/svg+xml">
-	<script src="DbLogic.js"></script>
-	<script src="index.js"></script>
+    <link rel="stylesheet" href="./public/styles/index.css" />
+    <link rel="stylesheet" href="./public/styles/landing.css" />
+    <link rel="icon" href="./assets/sigmaIcon.svg" type="image/svg+xml" />
   </head>
   <body>
-      <script>
-        loadDB();
-      </script>
-      <main>
-            <img src="./assets/logo.jpg" id="logo" alt="SigmaPubLogo">
-            <h1>SigmaPub</h1>
-            <h2>להזמנת מקום:</h2>
-            <form id="orderForm">
-                <table>
-                    <tr>
-                        <td><p>שם מלא:</p></td>
-                        <td><input type="text" id="name" placeholder="ישראל ישראלי"></td>
+    <nav>
+      <div class="nav-buttons">
+        <a href="./sys.html">מערכת ניהול</a>
+        <a href="./menu.html">תפריט</a>
+        <a href="./orderPlace.html">הזמנת מקום</a>
+      </div>
+      <h2 id="navbar-logo">Sigma<span>Pub</span></h2>
+    </nav>
+    <main>
+      <img src="./assets/logo.jpg" id="logo" alt="SigmaPubLogo" />
 
-                    </tr>
-                    <tr>
-                        <td><p>טלפון נייד:</p></td>
-                        <td>
-                            <input type="text" id="phoneNum" placeholder="0512345678">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>כמה תהיו?</p>
-                        </td>
-                        <td>
-                            <select id="numPeople" name="numPeople">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><p>תאריך הזמנה:</p></td>
-                        <td><input type="date" id="date" min="2024-01-01" max="2024-12-31"></td>
-                    </tr>
-                    <tr>
-                        <td><p>שעה:</p></td>
-                        <td><input type="time" id="time"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" class="btn" value="הזמנה" onclick="orderPlace()"></td>
-                        <td><input type="button" class="btn" value="ניקוי טופס" onclick="clearForm()"></td>
-                    </tr>
-                    <tr>
-                    </tr>
-                </table></br>
-            </form>
-            <button class="btn" onclick="window.location.href='./menu.html'">מעבר לתפריט</button>
-            <button class="btn" onclick="window.location.href='./sys.html'">מעבר למערכת ניהול</button>
-            <div class="saas">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfeYC7YW84wnhoRRDcHkhxzSk-1Fkmur1xDeATH6ONZoVwUHQ/viewform?embedded=true" scrolling="no" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">בטעינה…</iframe>
-            </div>
-            <!-- LightWidget WIDGET -->
-            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-            <iframe src="http://lightwidget.com/widgets/3636a1bdcf625e509a3155ac05b6260e.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-        </main>
+      <p>
+        סיגמה פאב הוא פאב צעיר ותוסס בעיר התחתית, שיודע לדבר לצעירים בשפתם<br />הפאב
+        ידוע בזכות מחיריו הנגישים לסטודנטים וצעירים ובמוזיקה הטובה שתורמת
+        לאווירה.<br />
+        מוזמנים לאינסטגרם שלנו, שם אנחנו מעדכנים על ערבי קונספט מיוחדים ומבצעים
+        שווים!
+      </p>
+
+      <!-- LightWidget WIDGET -->
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+      <iframe
+        src="http://lightwidget.com/widgets/3636a1bdcf625e509a3155ac05b6260e.html"
+        scrolling="no"
+        allowtransparency="true"
+        class="lightwidget-widget"
+        style="width: 60%; border: 0; overflow: hidden"
+      ></iframe>
+      <div class="saas">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfeYC7YW84wnhoRRDcHkhxzSk-1Fkmur1xDeATH6ONZoVwUHQ/viewform?embedded=true"
+          scrolling="no"
+          width="640"
+          height="480"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >בטעינה…</iframe
+        >
+      </div>
+    </main>
   </body>
 </html>

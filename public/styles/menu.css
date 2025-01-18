@@ -1,0 +1,47 @@
+/*
+  Menu Section
+*/
+.menu {
+  border: 2px solid white;
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+
+.menu th {
+  border: 2px solid white;
+  width: 200;
+}
+.menu td {
+  border: 2px solid white;
+  width: 200;
+}
+.price {
+  color: white;
+  font-size: 1.5rem;
+}
+.description {
+  color: white;
+}
+.img {
+  width: 150px;
+  height: 100px;
+}
+
+.tosafid {
+  text-align: right;
+  color: white;
+}
+.btnSection {
+  display: flex;
+  flex-direction: column;
+}
+#Htosafid {
+  width: 150;
+}
+
+#priceCalcBtn {
+  font-size: 15px;
+  padding: 20px 35px;
+  border-radius: 8px;
+}

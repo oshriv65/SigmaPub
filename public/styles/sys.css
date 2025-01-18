@@ -1,0 +1,8 @@
+#managerSystem {
+  display: none;
+}
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
