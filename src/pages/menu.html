@@ -1,19 +1,20 @@
 <html lang="en">
     <head>
         <title>תפריט</title>
-        <link rel="stylesheet" href="./public/styles/index.css" />
-		<link rel="stylesheet" href="./public/styles/menu.css" />
-        <link rel="icon" href="./assets/sigmaIcon.svg" type="image/svg+xml" />
-        <script src="index.js"></script>
+    	<link rel="stylesheet" href="../styles/index.css" />
+		<link rel="stylesheet" href="../styles/menu.css" />
+    	<link rel="icon" href="./public/sigmaIcon.svg" type="image/svg+xml" />
     </head>
     <body>
     <nav>
       <div class="nav-buttons">
-        <a href="./sys.html">מערכת ניהול</a>
-        <a href="./menu.html">תפריט</a>
-        <a href="./orderPlace.html">הזמנת מקום</a>
+        <a href="../pages/sys.html">מערכת ניהול</a>
+        <a href="../pages/menu.html">תפריט</a>
+        <a href="../pages/orderPlace.html">הזמנת מקום</a>
       </div>
-      <h2 id="navbar-logo">Sigma<span>Pub</span></h2>
+      <h2 id="navbar-logo">
+        <a href="../../index.html">Sigma<span>Pub</span></a>
+      </h2>
     </nav>
         <main>
             <h1>תפריט אוכל</h1>
@@ -37,7 +38,7 @@
 					<input type="checkbox" id="T4" name="toppings" value="5">תירס 5₪
 				</td>
 				<td>
-					<img src="./assets/Pizza_margherita.jpg" class="img" alt="Pizza margherita">
+					<img src="../assets/Pizza_margherita.jpg" class="img" alt="Pizza margherita">
 				</td>
 			</tr>
 			<tr>
@@ -51,7 +52,7 @@
 					<input type="checkbox" id="T24" name="toppings2" value="7">גאודה 7₪
 				</td>
 				<td>
-					<img src="./assets/Pizza_4Cheese.jpg" class="img" alt="pizza">
+					<img src="../assets/Pizza_4Cheese.jpg" class="img" alt="pizza">
 				</td>
 			</tr>
 			<tr>
@@ -65,7 +66,7 @@
 					<input type="checkbox" id="T34" name="toppings3" value="5">קצפת 5₪
 				</td>
 				<td>
-					<img src="./assets/Waffle.jpg" class="img" alt="Waffle">
+					<img src="../assets/Waffle.jpg" class="img" alt="Waffle">
 
 				</td>
 			</tr>
@@ -91,7 +92,7 @@
 						<option value="3">3</option>
 				</td>
 				<td>
-					<img src="./assets/SoftDrink.jpg" class="img" alt="Soft drinks">
+					<img src="../assets/SoftDrink.jpg" class="img" alt="Soft drinks">
 				</td>
 			</tr>
 			<tr>
@@ -106,7 +107,7 @@
 						<option value="3">3</option>
 				</td>
 				<td>
-					<img src="./assets/Cocktail.jpg" class="img" alt="Cocktail">
+					<img src="../assets/Cocktail.jpg" class="img" alt="Cocktail">
 
 				</td>
 			</tr>
@@ -122,12 +123,13 @@
 						<option value="3">3</option>
 				</td>
 				<td>
-					<img src="./assets/Beer.jpg" class="img" alt="Beer">
+					<img src="../assets/Beer.jpg" class="img" alt="Beer">
 				</td>
 			</tr>
 		</table>
                 </form>
                 <button type="button" onclick="calculateTotal()" id="priceCalcBtn">חשב מחיר</button>
         </main>
+		<script src="../js/menu.js"></script>
     </body>
 </html>

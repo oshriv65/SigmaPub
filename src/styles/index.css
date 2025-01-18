@@ -38,11 +38,13 @@ nav {
 .nav-buttons {
   padding: 0rem 3rem;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 .nav-buttons a {
   font-size: 2rem;
   padding-left: 2rem;
-  color: white;
-  text-decoration: none;
 }
 
 input {
