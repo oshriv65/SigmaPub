@@ -43,3 +43,9 @@ function getOrderFromLocalMemory(key) {
   let orders = JSON.parse(localStorage.getItem("orders")); // Retrieves orders from local storage
   return orders[key]; // Returns the order value for the given key
 }
+// Retrieves an order from local memory by key
+function deleteOrderFromLocalMemory(key) {
+  let orders = JSON.parse(localStorage.getItem("orders")); // Retrieves orders from local storage
+  delete orders[key];
+  localStorage.setItem("orders", JSON.stringify(orders)); // Saves the updated orders back to local storage
+}
