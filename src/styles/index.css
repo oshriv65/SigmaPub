@@ -71,3 +71,8 @@ main {
   height: 200px;
   border-radius: 10%;
 }
+#instagram-widget {
+  width: 60%;
+  border: 0;
+  overflow: hidden;
+}
