@@ -1,24 +1,4 @@
-#logo {
-  height: 200px;
-  border-radius: 10%;
-}
-
 p {
   font-size: 1.25rem;
   margin: 1px;
-}
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0rem 3rem;
-}
-.nav-buttons {
-  padding: 0rem 3rem;
-}
-.nav-buttons a {
-  font-size: 2rem;
-  padding-left: 2rem;
-  color: white;
-  text-decoration: none;
 }
